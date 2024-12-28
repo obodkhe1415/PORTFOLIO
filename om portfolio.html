@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Om Bodkhe, Web Developer at
+   Google with a passion for working with working with front end and back end designs , machine learning, and AI.">
+  <meta name="author" content="Om Bodkhe">
+  <title>Om Bodkhe - An Ideal Web Developer </title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
+    header nav {
+      margin-top: 10px;
+    }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 15px;
+      font-size: 1.2em;
+    }
+    header nav a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with your own image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: red;
+      text-align: center;
+      font-size: 2.5em;
+      position: relative;
+    }
+    .hero h2 {
+      font-size: 3.5em;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.5em;
+      margin: 20px 0;
+    }
+
+    /* About Section */
+    .about {
+      background: #fff;
+      padding: 50px;
+      text-align: center;
+    }
+    .about h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .about p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Skills Section */
+    .skills {
+      background: #333;
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .skills h2 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+    }
+    .skills .skill {
+      display: inline-block;
+      width: 20%;
+      margin: 20px;
+      padding: 30px;
+      background: #444;
+      border-radius: 10px;
+    }
+    .skills .skill img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+    .skills .skill h3 {
+      font-size: 1.5em;
+    }
+
+    /* Projects Section */
+    .projects {
+      padding: 50px 20px;
+      background-color: #f4f4f4;
+    }
+    .projects h2 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .project {
+      width: 30%;
+      margin-bottom: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .project:hover {
+      transform: scale(1.05);
+    }
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project-info {
+      padding: 20px;
+    }
+    .project-info h3 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+    .project-info p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 50px 20px;
+      background: #333;
+      color: white;
+    }
+    .contact h2 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #575757;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer p {
+      font-size: 1em;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .skills .skill {
+        width: 45%;
+      }
+      .project {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .skills .skill {
+        width: 100%;
+      }
+      .project {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Om Bodkhe</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div>
+      <h2>Hi, I'm Om Bodkhe</h2>
+      <p>Passionate Web Developer at Google | B.Tech Student at Zeal College, Pune | Innovator & Problem Solver</p>
+      <a href="#about" style="color: lightblue; text-decoration: none; font-size: 1.5em;">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Om Bodkhe, a Web Developer enthusiast and B.Tech student at Zeal College, Pune, 
+        graduating in 2028. I am passionate about working with web  to solve real-world problems. My
+         love for web designs, machine learning, and AI has driven me to pursue a career in this field. 
+         Due to my interest and expertise in web development, I am thrilled to have received a job offer 
+         from TGoogle with a compensation package of 25 Lacs per annum. I look forward to using my skills to make
+          a meaningful impact at Google and beyond.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+      <img src="https://via.placeholder.com/50" alt="Python">
+      <h3>Python</h3>
+      <p>My go-to language for data analysis, machine learning, and automation.</p>
+    </div>
+    <div class="skill">
+      <img src="https://via.placeholder.com/50" alt="Machine Learning">
+      <h3>Machine Learning</h3>
+      <p>Building models that predict trends and make decisions based on data.</p>
+    </div>
+    <div class="skill">
+      <img src="https://via.placeholder.com/50" alt="Data Visualization">
+      <h3>Data Visualization</h3>
+      <p>Turning raw data into actionable insights through tools like Tableau and Matplotlib.</p>
+    </div>
+    <div class="skill">
+      <img src="https://via.placeholder.com/50" alt="SQL">
+      <h3>SQL</h3>
+      <p>Querying databases to extract and manipulate data for analysis.</p>
+    </div>
+    <div class="skill">
+      <img src="https://via.placeholder.com/50" alt="TensorFlow">
+      <h3>TensorFlow</h3>
+      <p>Creating deep learning models to tackle complex problems.</p>
+    </div>
+    <div class="skill">
+      <img src="https://via.placeholder.com/50" alt="Big Data">
+      <h3>Big Data</h3>
+      <p>Working with large-scale data using Hadoop and Spark for scalable processing.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <img src="https://via.placeholder.com/500" alt="Data Science Project 1">
+        <div class="project-info">
+          <h3>Web analysis for buisness  Dashboard</h3>
+          <p>A dashboard built with Python, Pandas, and Plotly for visualizing business data.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/500" alt="Data Science Project 2">
+        <div class="project-info">
+          <h3>Customer Churn Prediction</h3>
+          <p>A machine learning project using scikit-learn to predict customer churn for a telecom company.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/500" alt="Data Science Project 3">
+        <div class="project-info">
+          <h3>Image Classification</h3>
+          <p>A deep learning project using TensorFlow for classifying images of everyday objects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+      <form action="submit_form.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Om Bodkhe. All rights reserved. B.Tech, Zeal College Pune (Class of 2028). Web Developer At Google.</p>
+  </footer>
+
+</body>
+</html>
